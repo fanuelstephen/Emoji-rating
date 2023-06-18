@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: yellow;
+}
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 1rem;
+  color: darkslategray;
+}
+.feedback-container {
+  background-color: #fff;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+.emoji-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  overflow: hidden;
+}
+.far {
+  margin: 1px;
+  transform: translate(0);
+  transition: transform 0.2s;
+}
+.fa-star {
+  color: lightgray;
+  cursor: pointer;
+}
+.fa-star.active {
+  color: gold;
+}
+.rating-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20%;
+}
